@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Concert+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Concert+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 10px;
+}
+
+.App{
+  animation: bounce 1.3s ease-in 1;
+  animation-delay: 0s; 
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-500px);
+  }
+  50% {
+    transform: translateY(500px); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+
+header{
+      background-color: whitesmoke;
+      color:darkgoldenrod;
+      box-shadow: 1px 3px 4px darkgoldenrod;
+      display: flex;
+      justify-content: space-between;
+      font-family: "Oswald", serif;
+      font-optical-sizing: auto;
+      padding: 3rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+     
+    }
+
+ul li{
+  display:inline-block;
+  margin-inline:10px;
+  list-style-type: none;
+  text-align: center;
+  background-color: goldenrod;
+  padding: 5px;
+  border-radius: 10px;
+ }
+
+ .list{
+  text-decoration: none;
+ }
+
+.posts,form,article{
+  background-color:darkgoldenrod ;
+  margin: 10px;
+  padding:2.5rem;
+  border-radius: 50px;
+  animation-name: appear;
+  animation-duration:  linear;
+  animation-timeline: view();
+  animation-range:entry 0;
+}
+  
+@keyframes appear 
+{
+    from {
+     opacity:0;
+     scale:0.20;
+    }
+    to{
+      opacity:1;
+      scale:1;
+    }
+}
+
+img{
+  width:200px;
+  height:200px;
+  border: 10px double rgb(241, 217, 0);
+  border-radius: 50%;
+  margin-left: 2px;
+}
+
+.mode-online{
+  position: relative;
+  left:10rem;
+  bottom: 10rem;
+  color:green;
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  width:55px;
+}
+
+.mode-offline{
+  position: relative;
+  left:10rem;
+  bottom: 10rem;
+  color:red;
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  width:55px;
+}
+
+.name{
+  position: relative;
+  bottom: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  left:2.5rem;
+}
+
+.subject,.caption{
+  position: relative;
+  bottom: 1.5rem;
+  font-family: "Kanit", serif;
+  left:2.5rem;
+}
+
+.caption{
+  width: 100ch;
+  margin-top: 2px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+label{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color:black;
+  margin-top: 10px;
+}
+
+.search{
+  position: relative;
+  left:-999px
+}
+
+form h1{
+  text-align: center;
+}
+
+#search,input,textarea{
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 1px 3px 4px darkgoldenrod;
+  width: 90%;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+#search{
+  width:500px;
+  border-radius: 45px;
+  color:goldenrod;
+ }
+
+ .input{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+ }
+
+
+button{
+  color:goldenrod;
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+  width:55px;
+  border: none;
+  box-shadow: 1px 3px 4px darkgoldenrod;
+  padding: 1rem;
+} 
+
+.btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.about{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilebutton{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .profilepage{
+    padding: 10.5px;
+    border-radius: 15px;
+    margin-top: 2px;
+  }
+
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+  }
+.follow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:50px;
+  position: relative;
+  bottom:150px;
+}
+.profile-container{
+  background-color: whitesmoke;
+  border-radius: 0px;
+}
+  
+
+@media screen and (max-width: 950px) {
+  header{
+  background-color: whitesmoke;
+  color:darkgoldenrod;
+  box-shadow: 1px 3px 4px darkgoldenrod;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  padding: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+ 
+}
+
+
+.posts,form{
+background-color:darkgoldenrod ;
+margin: 10px;
+padding:2.5rem;
+border-radius: 50px;
+}
+
+img{
+width:200px;
+height:200px;
+border: 10px double rgb(241, 217, 0);
+border-radius: 50%;
+margin-left: 2px;
+}
+
+.mode-online{
+position: relative;
+left:10rem;
+bottom: 10rem;
+color:green;
+background-color: whitesmoke;
+padding: 5px;
+border-radius: 10px;
+width:55px;
+}
+
+.mode-offline{
+position: relative;
+left:10rem;
+bottom: 10rem;
+color:red;
+background-color: whitesmoke;
+padding: 5px;
+border-radius: 10px;
+width:55px;
+}
+
+.name{
+position: relative;
+bottom: 2rem;
+font-family: "Ubuntu", sans-serif;
+font-weight: 500;
+font-style: normal;
+left:2.5rem;
+}
+
+.subject,.caption{
+position: relative;
+bottom: 1.5rem;
+font-family: "Kanit", serif;
+left:2.5rem;
+}
+
+.caption{
+width: 30ch;
+margin-top: 2px;
+font-family: "Ubuntu", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+label{
+font-family: "Ubuntu", sans-serif;
+font-weight: 500;
+font-style: normal;
+color:black;
+}
+
+form h1{
+text-align: center;
+margin-bottom: 2rem;
+}
+
+#search,input,textarea{
+border: none;
+background-color: whitesmoke;
+border-radius: 5px;
+box-shadow: 1px 3px 4px darkgoldenrod;
+width: 90%;
+padding: 2rem;
+margin-bottom: 1rem;
+}
+
+#search{
+  width:500px;
+  border-radius: 45px;
+  color:goldenrod;
+  margin-left: 2rem;
+ }
+
+ .input{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+ }
+form{
+  padding: 4rem;
+  margin-top: 3rem;
+} 
+
+input,textarea{
+  position: relative;
+  right: 20px;
+}
+
+.follow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:50px;
+  position: relative;
+  bottom:150px;
+  left:20px;
+}
+}
+
+@media screen and (max-width: 450px){
+
+  header{
+    padding-bottom:6rem ;
+  }
+
+.caption{
+    width: 25ch;
+    margin-top: 0.2px;
+  }
+
+  ul li {
+    display: none;
+    flex-direction: column;
+    background-color: goldenrod ;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    right:100px ;
+    top: 80px;
+  }
+  
+  .open ul li{
+    display: flex;
+  }
+  
+  .menu-bar{
+    background-color: goldenrod;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 80px;
+  }
+
+  .menu-bar .line {
+    display: block;
+    margin-bottom:2px;
+    height: 4px; 
+    width: 50%; 
+    background-color:white; 
+    border-radius: 2px; 
+    position: relative;
+    top:20px;
+    left: 12px;
+  }
+
+
+  #search{
+    width:500px;
+    border-radius: 45px;
+    color:goldenrod;
+   }
+  
+   .input{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+   }
+   
+   .follow{
+    top:10px;
+    margin-bottom: 35px;
+  
+  }
+   
+
+  }
+
+
+  @media screen and (max-width: 380px){
+    .menu-bar{
+     position: relative;
+     left: 50px;
+    }
+  }
+
+
