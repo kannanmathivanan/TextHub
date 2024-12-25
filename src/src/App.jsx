@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Header';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Addpost from './Addpost';
 import Home from './Home';
 import About from './About';
